@@ -2,11 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: esj-r4
-  namespace: esj-r4
 spec:
   clusterResourceWhitelist:
     - group: '*'
       kind: '*'
+  sourceRepos:
+    - 'https://github.com/a1b1ue/ab-argocd-apps.git'
   destinations:
     - namespace: 'esj-r4-*'
       server: 'https://kubernetes.default.svc'
