@@ -9,5 +9,5 @@ spec:
     project: operate-first
     source:
       path: env/dev/domain1-domain-api
-      repoURL: https://github.com/operate-first/apps.git
+      repoURL: https://github.com/a1b1ue/apps.git
       targetRevision: HEAD
