@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: domain1-domain-api
+spec:
+  destination:
+      namespace: esj-r4-domain1-domain-api
+      name: in-cluster
+    project: operate-first
+    source:
+      path: env/dev/domain1-domain-api
+      repoURL: https://github.com/operate-first/apps.git
+      targetRevision: HEAD

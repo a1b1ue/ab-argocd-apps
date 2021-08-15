@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: domain1-integration-api
+spec:
+  destination:
+    namespace: esj-r4-domain1-integration
+    name: in-cluster
+  project: esj-r4
+  source:
+    path: env/dev/domain1-integration-api
+    repoURL: https://github.com/a1b1ue/apps.git
+    targetRevision: HEAD
